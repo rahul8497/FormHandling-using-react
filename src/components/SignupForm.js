@@ -21,7 +21,7 @@ const SignupForm = ({submitForm}) => {
     if(Object.keys(errors).length===0 && dataIsCorrect){
         submitForm(true);
     }
-   },[errors]);
+   },[dataIsCorrect,submitForm,errors]);
   return (
     <div className='container'>
         <div className="app-wrapper">
